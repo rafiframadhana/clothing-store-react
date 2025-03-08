@@ -18,12 +18,12 @@ export default function Testimonials() {
                   {[...Array(5)].map((star, i) => (
                     <i
                       key={i}
-                      className={`fa ${
+                      className={`${
                         i < Math.floor(testimonial.rating)
-                          ? "fa-star"
+                          ? "fas fa-star"
                           : i < testimonial.rating
-                          ? "fa-star-half-o"
-                          : "fa-star-o"
+                          ? "fas fa-star-half-alt"
+                          : "far fa-star"
                       }`}
                     ></i>
                   ))}

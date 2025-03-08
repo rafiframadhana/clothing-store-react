@@ -73,12 +73,12 @@ export default function Products() {
                   {[...Array(5)].map((star, i) => (
                     <i
                       key={i}
-                      className={`fa ${
+                      className={`${
                         i < Math.floor(product.rating)
-                          ? "fa-star"
+                          ? "fas fa-star"
                           : i < product.rating
-                          ? "fa-star-half-o"
-                          : "fa-star-o"
+                          ? "fas fa-star-half-alt"
+                          : "far fa-star"
                       }`}
                     ></i>
                   ))}

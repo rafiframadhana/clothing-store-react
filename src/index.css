@@ -178,6 +178,21 @@ nav ul li a{
 }
 
 
+.rating {
+  color: #ffcc00;
+  margin: 5px 0;
+}
+
+.rating i {
+  margin-right: 2px;
+}
+
+.fas.fa-star,
+.fas.fa-star-half-alt,
+.far.fa-star {
+  color:rgb(95, 163, 135);
+}
+
 /* Footer */
 
 .footer {
