@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <>
       <div className="footer" id="footer">
-        <div className="container">
+        <div className="footer-container">
           <div className="child">
             <div className="footerChild1">
               <img src={brandLogo} alt="complogo" />

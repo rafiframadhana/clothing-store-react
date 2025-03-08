@@ -3,6 +3,7 @@
   padding: 180px 100px;
 }
 
+
 .line1 {
   margin: 15px auto;
   border-radius: 10px;
@@ -13,9 +14,8 @@
 
 .small-container {
   max-width: 1380px;
-  margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
+  margin: 0 auto;
+  padding: 0 25px;
 }
 
 .childprods {
@@ -179,6 +179,9 @@
 
   .halfchild-text {
     margin-top: 40px;
+  }
+  .testchild {
+    flex-basis: 100%;
   }
 }
 

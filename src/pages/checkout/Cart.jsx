@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import {
   removeFromCart,
   clearCart,
@@ -50,7 +51,9 @@ export default function Cart() {
             <div>
               {cartItems.map((item) => (
                 <div key={item.id + item.size} className="cart-item">
-                  <img src={item.imgSrc} alt={item.name} />
+                  <Link to={`/product-details/${item.id}`}>
+                    <img src={item.imgSrc} alt={item.name} />
+                  </Link>
                   <div>
                     <h4>{item.name}</h4>
                     <p>Size: {item.size}</p>

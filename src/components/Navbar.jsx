@@ -35,7 +35,7 @@ export default function Navbar() {
 
   return (
     <div className="header">
-      <div className="container">
+      <div className="nav-container">
         <div className="navbar">
           <div className="logo left-section">
             <Link to="/">
@@ -71,7 +71,7 @@ export default function Navbar() {
                         title={username}
                       />
                     ) : (
-                      <p>Login/Sign Up</p>
+                      "Login/Sign Up"
                     )}
                   </Link>
                 </li>

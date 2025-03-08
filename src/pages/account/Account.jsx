@@ -55,14 +55,14 @@ export default function Account() {
       ) : (
         <div className="formPage">
           {!showForm && (
-            <>
+            <div className="form-options">
               <div className="btn" id="removeLog" onClick={showLogin}>
                 Existing User? Login
               </div>
               <div className="btn" id="removeReg" onClick={showRegister}>
                 New User? Register
               </div>
-            </>
+            </div>
           )}
           {showForm && isLogin && (
             <form className="showForm" id="loginForm" onSubmit={handleLogin}>

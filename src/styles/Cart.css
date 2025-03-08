@@ -146,7 +146,12 @@
 }
 
 /* Payment */
-
+.wrapper{
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .payment {
   background: rgba(0, 0, 0, 0.6);
   max-width: 360px;
@@ -256,5 +261,10 @@
   .card-item {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .wrapper{
+    height: 100%;
+    display: block;
   }
 }

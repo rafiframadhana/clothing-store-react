@@ -242,4 +242,8 @@
     justify-content: center;
     margin-bottom: 30px;
   }
+
+  .product-size-selector{
+    width: 50%;
+  }
 }
