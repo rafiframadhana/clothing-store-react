@@ -1,0 +1,260 @@
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  color: antiquewhite;
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.cart-container h2 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.cart-content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+.cart-left {
+  width: 48%;
+  background-color: rgba(0, 0, 0, 0.758);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cart-right {
+  width: 48%;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.758);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cart-item img {
+  width: 90px;
+  height: 120px;
+  border-radius: 5px;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.cart-item h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.cart-item p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin: 3px 0;
+}
+
+.cart-item button {
+  margin-top: 5px;
+  padding: 6px 12px;
+  background: #ff4d4d;
+  color: antiquewhite;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cart-item button:hover {
+  background: #e63946;
+}
+
+.cart-content .btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background: #949393;
+  color: antiquewhite;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cart-content .btn:hover {
+  background: #333;
+}
+
+.cart-right h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.cart-right p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.payment-method {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.payment-method select,
+.shipping-method select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: lightgray;
+  outline: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.payment-method select option,
+.shipping-method select option {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .cart-content {
+    flex-direction: column;
+    width: 100%;
+  }
+  .cart-left,
+  .cart-right {
+    width: 100%;
+  }
+}
+
+/* Payment */
+
+.payment {
+  background: rgba(0, 0, 0, 0.6);
+  max-width: 360px;
+  margin: 80px auto;
+  height: auto;
+  padding: 70px 35px 35px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.payment-form {
+  margin-top: 90px;
+}
+
+.payment h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: antiquewhite;
+}
+
+.form .label {
+  display: block;
+  color: antiquewhite;
+  margin-bottom: 6px;
+}
+
+.input {
+  padding: 13px 0 13px 25px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  outline: none;
+  font-size: 16px;
+  color: #555555;
+}
+
+.card-grp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item {
+  width: 48%;
+}
+
+.space {
+  margin-bottom: 20px;
+}
+
+.icon-relative {
+  position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far {
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  font-size: 20px;
+  color: #555555;
+}
+
+.payment-btn.btn {
+  margin-top: 40px;
+  background: #949393;
+  padding: 8px 30px;
+  text-align: center;
+  color: #f8f8f8;
+  border-radius: 30px;
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background 0.5s;
+}
+
+.payment-btn.btn:hover {
+  background: #666666;
+}
+
+.payment-mode {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+}
+
+.payment-logo {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  width: 300px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 420px) {
+  .card-grp {
+    flex-direction: column;
+  }
+
+  .card-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

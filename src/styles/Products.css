@@ -1,0 +1,111 @@
+.child-2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto 50px;
+  padding: 0 10px;
+  max-width: 1380px;
+  align-items: center;
+  position: relative;
+}
+
+.price-tag {
+  color: #ffcc00;
+}
+
+.product-page-container {
+  background-color: rgba(0, 0, 0, 0.366);
+  padding: 20px;
+  margin: 50px 20px;
+  border-radius: 20px;
+}
+
+.child-2 h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search input {
+  border: none;
+  background-color: rgb(218, 218, 218);
+  padding: 4px;
+  border-radius: 10px;
+  color: #333;
+  max-width: 250px;
+  margin-left: 5px;
+}
+
+.search label {
+  font-size: 18px;
+}
+
+.sort-by select,
+.sort-by select option {
+  border: none;
+  background-color: rgb(218, 218, 218);
+  padding: 4px;
+  border-radius: 20px;
+  color: #555555;
+}
+
+.page-btn {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.page-btn span {
+  display: inline-block;
+  background-color: black;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.page-btn span:hover {
+  background-color: #333;
+  border: 1px solid grey;
+}
+
+.rating-price {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1280px) {
+  .child-2 h2 {
+    top: -30px;
+  }
+
+  .search input {
+    max-width: 130px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .child-2 {
+    margin-top: 60px;
+  }
+
+  .child-2 h2 {
+    top: -30px;
+  }
+
+  .search input {
+    margin-top: 10px;
+    max-width: 100px;
+  }
+
+  .sort-by select,
+  .sort-by select option {
+    margin-top: 10px;
+    padding: 4px;
+    border-radius: 20px;
+    width: 55px;
+  }
+}
