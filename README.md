@@ -52,6 +52,6 @@ We welcome contributions! Feel free to fork, submit PRs, or raise issues.
 
 For any questions or support, feel free to **open an issue** or reach out. Happy coding! 🚀
 
-## * Notes
+## *Notes
 
 This is a new and more advance version of **[github.com/rafiframadhana/Bray-Surfing-Clothing-Store](https://github.com/rafiframadhana/Bray-Surfing-Clothing-Store)**
