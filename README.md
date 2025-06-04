@@ -2,6 +2,8 @@
 
 Welcome to **BraySurfing**! This is an e-commerce website for stylish clothing, offering a seamless shopping experience with a modern UI built using **React & Vite**.
 
+![Chatbot Screenshot](https://i.imgur.com/2Yk9ouD.png)
+
 ## 🌍 Live Demo
 
 [Check it out on Netlify](https://bray-surfing.netlify.app/)
